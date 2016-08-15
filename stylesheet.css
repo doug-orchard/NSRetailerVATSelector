@@ -1,0 +1,105 @@
+/*
+	NS RETAILER VAT SELECTION
+	Author: Doug Orchard
+	site: https://github.com/doug-orchard
+	Licence: MIT
+*/
+*
+.cart dd em{
+	color: #333;
+}
+
+/* Core element, use this to position the VAT selector anywhere you'd like */
+.cart dl:first-child dd{
+	position: absolute;
+	bottom: 16px;
+	right: 454px;
+	height: 36px;
+	color: #333;
+	max-width: 300px;
+	display: table;
+}
+/* Border around the toggle switch */
+.cart dl:first-child dd:after{
+	top: 1px;
+	left: 48px;
+	z-index: 0;
+	content: '';
+	height: 21px;
+	width: 37px;
+	position: absolute;
+	border-radius: 15px;
+	border: 1px solid #c1c1c1;
+	background-color: #fff;
+}
+.cart dl:first-child dd em{
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: -4px;
+	font-size: 8px;
+	position: relative;
+	font-style: normal;
+	padding-right: 10px;
+	position: absolute;
+	text-align: center;
+}
+.cart dl:first-child label{
+	padding: 4px;
+	display: inline-block;
+	float: right;
+	padding: 0 2px 0 0;
+	height: 23px;
+	margin: 0;
+	width: 66px;
+	color: #333;
+	margin-top: 1px;
+	font-weight: bold;
+	z-index: 1;
+	position: relative;
+}
+/* Yes to Vat part of the toggle */
+.cart dl:first-child label:first-of-type input[type="radio"]{
+	float: left;
+	margin-right: 10px;
+}
+.cart dl:first-child label:first-of-type input[type="radio"]:after{
+	border-radius: 0 17px 17px 0;
+}
+/* Replace background-color to change the colour of the toggle element */
+.cart dl:first-child input[type="radio"]:checked:after{
+	border-radius: 17px !important;
+	background-color: #7ed321;
+}
+/* No to Vat part of the toggle */
+.cart dl:first-child label:first-of-type + label{
+	text-align: right;
+}
+.cart dl:first-child label:first-of-type + label input[type="radio"]{
+	float: right;
+	margin-right: -1px;
+	margin-left: 10px;
+}
+.cart dl:first-child input[type="radio"]{
+	cursor: pointer;
+	padding: 0;
+	width: 15px;
+	height: 15px;
+	margin-top: 2px;
+	position: relative;
+	background: #fff;
+	outline: none;
+}
+.cart dl:first-child input[type="radio"]:after{
+	border: none;
+	background-color: #fff;
+	content: "";
+	top: 0;
+	left: -2px;
+	width: 17px; /* needs to be 2px + then the input[type="radio"] */
+	height: 17px; /* needs to be 2px + then the input[type="radio"] */
+	position: absolute;
+}
+.cart dl:first-child label:first-of-type + label input[type="radio"]:after{
+	border-radius: 17px 0 0 17px;
+}

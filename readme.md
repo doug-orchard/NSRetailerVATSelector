@@ -6,10 +6,10 @@ Replaces the double input design for a toggle like design for the VAT Selector o
 
 ### Examples
 Before:
-![alt text](https://github.com/doug-orchard/NSRetailerVATSelector/master/images/before.png "Before")
+![alt text](https://github.com/doug-orchard/NSRetailerVATSelector/blob/master/images/before.png "Before")
 
 After:
-![alt text](https://github.com/doug-orchard/NSRetailerVATSelector/master/images/after.png "After")
+![alt text](https://github.com/doug-orchard/NSRetailerVATSelector/blob/master/images/after.png "After")
 
 ### Why did I make this?
 The double radio buttons as nice as they are, they limited the design of the product.
